@@ -1,0 +1,828 @@
+{
+  "Usuario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"username\"]"
+  },
+
+  "Password": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"password\"]"
+  },
+  "Titulo inscripcion empresa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//app-resgisterfactory//h1[contains(.,'empresas')]"
+  },
+  "Titulo informacion general": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//app-generalinformation//h1[contains(.,'general')]"
+  },
+  "Titulo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//app-resgisterfactory//h1"
+  },
+
+  "Password Confirmacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"passwordConfirm\"]"
+  },
+  "Registrarse": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//app-login//u[contains(.,'Registrarse')]"
+  },
+  "Olvide clave": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//app-login//u[contains(.,'Olvide')]"
+  },
+  "Usuario Nacional": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-radiobutton[contains(.,'nacional')]"
+  },
+  "Usuario Extrajero": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-radiobutton[contains(.,'extranjero')]"
+  },
+  "Tipo de Documento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@formcontrolname=\"documentType\"]"
+  },
+  "Numero de Documento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formControlname='documentNumber']"
+  },
+  "Codigo de Inscripcion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='inscriptionCode']|//input[@formcontrolname='inscriptionCode']"
+  },
+  "Codigo de Verificacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Ingrese')]/div/div/input"
+  },
+  "Primer Nombre": {
+    "GetFieldBy": "id",
+    "ValueToFind": "name"
+  },
+  "Primer Nombre Rol": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//input[@formcontrolname='firstName'])[last()]"
+  },
+  "Segundo Nombre": {
+    "GetFieldBy": "id",
+    "ValueToFind": "secondName"
+  },
+  "Primer Apellido Rol": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//input[@formcontrolname='firstSurname'])[last()]"
+  },
+  "Primer Apellido": {
+    "GetFieldBy": "id",
+    "ValueToFind": "lastName"
+  },
+  "Segundo Apellido": {
+    "GetFieldBy": "id",
+    "ValueToFind": "secondLastName"
+  },
+  "Correo Electronico": {
+    "GetFieldBy": "id",
+    "ValueToFind": "email"
+  },
+  "Correo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//input[@formcontrolname='email'])[last()]"
+  },
+  "Numero Tarjeta Profesional": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//input[@formcontrolname='professionalCardNumber'])[last()]"
+  },
+  "Terminos de Uso": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-checkbox[@formcontrolname='conditions']"
+  },
+  "Spinner": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "/html/body/app-root/app-main/div[1]/img"
+  },
+  "Boton Registrarse": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Registrarse')]"
+  },
+  "Boton Documento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[@icon='ui-icon-document']"
+  },
+  "Boton Asignar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Asignar')])[last()]"
+  },
+  "Boton Enviar a Aprobacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Enviar a aproba')])[last()]"
+  },
+  "Boton Enviar a Firma": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Enviar a firma')])[last()]"
+  },
+  "Boton Agregar Firma": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Agregar firma')]"
+  },
+  "Boton Agregar Sucursal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Agregar Sucursal')]"
+  },
+  "Boton Actualizar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Actualizar')]"
+  },
+  "Boton Consultar Tarifa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Consultar tarifa')]"
+  },
+  "Boton Radicar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Radicar')]"
+  },
+  "Boton Cerrar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Cerrar')]"
+  },
+  "Boton Entrar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Entrar')]//div|//button[contains(.,'Entrar')]"
+  },
+  "Boton Guardar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button/span[normalize-space(text())='Guardar'])[last()]"
+  },
+  "Boton Guardar PopUp": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@role='dialog']//button/span[normalize-space(text())='Guardar']"
+  },
+  "Boton Guardar Concepto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Guardar concepto')]"
+  },
+  "Boton Guardar Sucursal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[normalize-space(text())='Guardar'])[last()]"
+  },
+  "Boton Gestionar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Gestionar')]"
+  },
+  "Boton Firmar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Firmar')]"
+  },
+  "Boton Firmar Listado de Materias Primas": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Firmar Listado de materias primas')]"
+  },
+  "Boton Visualizar Tramite": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Visualizar')]"
+  },
+  "Boton Codigo de Barras": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'barras')]"
+  },
+  "Boton Buscar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button//*[normalize-space(text())='Buscar'])[last()]"
+  },
+  "Boton Consultar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button//*[normalize-space(text())='Consultar'])[last()]"
+  },
+  "Boton Consultar Popup": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dialog//button//*[normalize-space(text())='Consultar']"
+  },
+  "Boton Consultar Interesado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div//p-header[contains(.,'interesado')]/../..//button//*[normalize-space(text())='Consultar'])[last()]"
+  },
+  "Boton Consultar Titular": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Adicionar Titular')]|(//div//p-header[contains(.,'solicitante')]/../..//button//*[normalize-space(text())='Consultar'])[last()]|(//div//p-header[contains(.,'empresa')]/../..//button//*[normalize-space(text())='Consultar'])[last()]|(//div//p-header[contains(.,'titular')]/../..//button//*[normalize-space(text())='Consultar'])[last()]"
+  },
+  "Boton Flecha Siguiente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'arrow_forward')]|//button[contains(@icon,'arrow')]"
+  },
+  "Boton Siguiente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Siguiente')]"
+  },
+  "Boton Agregar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Agregar')])[last()]"
+  },
+  "Boton Aceptar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Aceptar')]"
+  },
+  "Boton Validar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Validar')]"
+  },
+  "Boton Finalizar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Finalizar')]"
+  },
+  "Boton Volver": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Volver')]"
+  },
+  "Boton Continuar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Continuar')]"
+  },
+  "Boton Ver Plantilla": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Ver plantilla')]"
+  },
+  "Boton Si": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button//*[normalize-space(text())='Si']"
+  },
+  "Boton No": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button//*[normalize-space(text())='No']"
+  },
+  "Seleccionar Pais": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[contains(.,'Pa')]/../div//p-dropdown[@optionlabel='nombre'])[1]"
+  },
+  "Seleccionar Tipo de Devolucion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo de devolu')]/../../..//p-dropdown//span"
+  },
+  "Pais de Nacionalidad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-dropdown[@formcontrolname='country'])[last()]|(//p-dropdown[@formcontrolname='mainCountryForm'])[last()]"
+  },
+  "Departamento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-dropdown[@formcontrolname='state'])[last()]|(//p-dropdown[@formcontrolname='departament'])[last()]|(//p-dropdown[@formcontrolname='departamentForm'])[last()]|//label[contains(.,'Departamento')]/../..//p-dropdown"
+  },
+  "Ciudad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-dropdown[@formcontrolname='city'])[last()]|(//p-dropdown[@formcontrolname='cityForm'])[last()]|//label[contains(.,'Municipio')]/../..//p-dropdown"
+  },
+  "Direccion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//input[@formcontrolname='address'])[last()]|(//input[@formcontrolname='addressExt'])[last()]"
+  },
+  "Tipo de Direccion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@formcontrolname='directionType']//span"
+  },
+  "Seleccionar Direccion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@formcontrolname='direction']//span"
+  },
+  "Numero Direccion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='inputDirection1']"
+  },
+  "Complemento Direccion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='inputDirection2']"
+  },
+  "Casa Direccion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='inputDirection3']"
+  },
+  "Barrio Direccion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='neighborhood']"
+  },
+  "Confirmar password": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='passwordConfirm']"
+  },
+  "Boton Confirmar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[@label='Confirmar']"
+  },
+  "Boton Devolver": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[@label='Devolver']"
+  },
+  "Boton Adicionar Rol": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Adicionar Rol')]"
+  },
+  "Boton Adicionar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Adicionar')]"
+  },
+  "Boton Adicionar Grupo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Adicionar Grupo')]"
+  },
+  "Alerta": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-toastitem//div"
+  },
+  "PopUp Confirmacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-confirmdialog"
+  },
+  "Menu Radicar Solicitud": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//invima-dynamic-menu//a/span[contains(.,'Radicar solicitud')]"
+  },
+  "Menu Mis Tramites": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//invima-dynamic-menu//a/span[contains(.,'Mis tr')]"
+  },
+  "Menu Mis Tramites Y Solicitudes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//invima-dynamic-menu//a/span[contains(.,'Mis tr')][contains(.,'mites y/o solicitudes')]"
+  },
+  "Menu Estudio del Tramite": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//invima-dynamic-menu//a/span[contains(.,'Estudio del tr')][contains(.,'mite')]"
+  },
+  "Menu Asignar Tramites": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//invima-dynamic-menu//a/span[contains(.,'Asignar tr')][contains(.,'mites')]"
+  },
+  "Mis Solicitudes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a/span[contains(.,'Mis solicitudes')]"
+  },
+  "Menu Registrar Empresa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//invima-dynamic-menu//a/span[contains(.,'Registrar empresa')]"
+  },
+  "Menu Notificaciones": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//invima-dynamic-menu//a/span[contains(.,'Notificaciones')]"
+  },
+  "Sub Menu Notificacion Tramites": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//invima-dynamic-menu//a/span[contains(.,'Notificaci')][contains(.,'mites')]"
+  },
+  "Menu Trabajo Asignado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//invima-dynamic-menu//a/span[contains(.,'Trabajo')][contains(.,'signado')])[last()]"
+  },
+  "Sub Menu Informacion General": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//invima-dynamic-menu//a/span[contains(.,'n general')])[1]"
+  },
+  "Sub Menu Solicitudes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//invima-dynamic-menu//a/span[contains(.,'asignado solicitudes')])[1]"
+  },
+  "Seleccionar Tipo de producto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo de producto')]/../../..//p-dropdown//span|//p-dropdown[@formcontrolname='productType']//span"
+  },
+  "Seleccionar Tipo Documental": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo documental')]/../../..//p-dropdown//span"
+  },
+  "Multiseleccion Tipo de producto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-multiselect[@formcontrolname=\"productTypeForm\"]"
+  },
+  "Seleccionar Tipo de Notificacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/*[contains(.,'*Tipo de noti')]/../p-dropdown//span|//p-dropdown[@formcontrolname='notifiationType']//span"
+  },
+  "Seleccionar Categoria": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Categor')]/../../..//p-dropdown//span"
+  },
+  "Seleccionar Grupo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Grupo')]/../../..//p-dropdown[@name='groupSelect']//span|//div/label[contains(.,'Grupo')]/../../..//p-dropdown[@formcontrolname='group']//span"
+  },
+  "Seleccionar Subgrupo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Subgrupo')]/../../..//p-dropdown//span"
+  },
+  "Seleccionar Tipo de Tramite": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo de tr')]/../../..//p-dropdown//span"
+  },
+  "Seleccionar Modalidad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Modalidad')]/../../..//p-dropdown//span"
+  },
+  "Seleccionar Subtipo Tramite": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Subtipo de tr')]/../../..//p-dropdown[@name='procedureSubtypeSelect']//span"
+  },
+  "Seleccionar Origen de la Empresa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Origen de la empresa')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Tipo de Documento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo de documento')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Tipo de Rol": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo de rol')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Rol del Profesional": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Rol del profesional')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Nombre del Profesional": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Nombre del profesional')]/../..//p-dropdown//span"
+  },
+  "Radio Primer Resultado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[@role='radio'])[1]"
+  },
+  "Tabla Dialog Primer Resultado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dialog//tbody/tr"
+  },
+  "CheckBox Primer Resultado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[@role='checkbox'])[2]"
+  },
+  "CheckBox Seleccionar Profesional": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[@role='checkbox'])[3]"
+  },
+  "CheckBox Tiene Apoderado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[contains(@label,'Tiene apoderado')]//div[@role='checkbox'])[1]"
+  },
+  "CheckBox Apoderado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[@name='groupAttr']//div[@role='checkbox'])[1]"
+  },
+  "CheckBox Representante Legal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[@name='groupLegal']//div[@role='checkbox'])[1]"
+  },
+  "CheckBox Director Tecnico": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[@name='groupTechn']//div[@role='checkbox'])[1]"
+  },
+  "Seccion Director Tecnico": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//app-legal-information-technical-director"
+  },
+  "CheckBox Nuevo Representante Legal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[@name='groupLegal']//div[@role='checkbox'])[2]"
+  },
+  "CheckBox Permiso Registrar Informacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[@formcontrolname='registerInformation'])[last()]"
+  },
+  "CheckBox Permiso Firmar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[@formcontrolname='signed'])[last()]"
+  },
+  "CheckBox Permiso Pagar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[@formcontrolname='toPay'])[last()]"
+  },
+  "CheckBox Permiso Consultar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-checkbox[@formcontrolname='consult'])[last()]"
+  },
+  "Tipo de Registro": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo de registro')]/../..//p-dropdown//span"
+  },
+  "Nombre del Documento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Nombre del documento')]/../..//p-dropdown//span"
+  },
+  "Cantidad de Folios": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@formcontrolname=\"folios\"]//input"
+  },
+  "Boton Adjuntar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@type='file']"
+  },
+  "PDF Visualizacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@id='pdf-embeded'][contains(.,'GENERAL')]|//div[@id='pdf-embeded'][contains(.,'General')]"
+  },
+  "Cerrar Visor": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[@role='button']|//p-toastitem/div[@role='alert']//a"
+  },
+  "Correo Representante": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'@')]/..//p[2]"
+  },
+  "Filtro Numero de Solicitud": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//table/thead/tr[2]/th[1]/input"
+  },
+  "Filtro Numero de Radicado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//table/thead/tr[2]/th[2]/input|//input[@formcontrolname='predicateNumber']|//label[contains(.,'radicado')]/../..//input"
+  },
+  "Filtro Global": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@placeholder='Filtro Global']"
+  },
+  "Ingresar Numero de Solicitud": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//input[@formcontrolname=\"proceedingsNumber\"])[2]"
+  },
+  "Numero de Solicitud": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[contains(.,'mero de Solicitud')])[last()]/../div/h5/p"
+  },
+  "Numero Certificado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='certificateNumber']"
+  },
+  "Seleccionar Concepto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Concepto')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Profesion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Profesi')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Genero": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'nero')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Informacion Poblacional": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'poblacional')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Tipo Sucursal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo sucursal')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Tipo Certificado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo Certificado')]/../..//p-dropdown//span"
+  },
+  "Email Notificacion": {
+    "GetFieldBy": "id",
+    "ValueToFind": "emailNotification"
+  },
+  "Email para Notificacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[@role='dialog']//input[@type='email'])[1]"
+  },
+  "Confirmar Email para Notificacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[@role='dialog']//input[@type='email'])[2]"
+  },
+  "Multiseleccion Tipo de Empresa": {
+      "GetFieldBy": "Xpath",
+      "ValueToFind": "//p-multiselect[@formcontrolname='companyType']"
+    },
+  "Nombre de la Empresa": {
+      "GetFieldBy": "Xpath",
+      "ValueToFind": "//input[@formcontrolname='companyName']"
+    },
+  "Guardar Correo Notificacion": {
+      "GetFieldBy": "Xpath",
+      "ValueToFind": "//div[@role='dialog']//button[contains(.,'Guardar')]"
+    },
+  "Seleccionar Tamano Empresa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tama')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Envio Factura": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'La factura')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Pais Certificado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@name='agencyExpeditionCountryControl']"
+  },
+  "Nombre de la Sucursal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='branchOffice']"
+  },
+  "Celular Sucursal": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='cellphone']"
+  },
+  "Celular Empresa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='cellphoneForm']"
+  },
+  "Codigo CIIU": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"codeCIIU\"]"
+  },
+  "Matricula": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"enrollment\"]"
+  },
+  "Seleccionar Actividad Economica": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@role=\"dialog\"]//label[contains(.,'Actividad econ')]//..//..//p-dropdown//span"
+  },
+  "Dibujo Firma": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//signature-pad/canvas"
+  },
+  "Boton Editar Representante": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//tr[contains(.,'Representante')]//button[@icon='ui-icon-pencil']"
+  },
+  "Boton Editar Director": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//tr[contains(.,'Director')]//button[@icon='ui-icon-edit']"
+  },
+  "Boton Eliminar Devolucion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//app-documentmanagement//p-table[@datakey='typeDocu']//td/button"
+  },
+  "Concepto Final": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@role='region']//textarea"
+  },
+  "Tab Conceptos": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a/span[contains(.,'Conceptos')]"
+  },
+  "Tab Documentacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a/span[contains(.,'Documentac')]"
+  },
+  "Tab Tarifa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a/span[contains(.,'tarifa')]"
+  },
+  "Valor Tarifa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dialog//table/tbody/tr/td[4]"
+  },
+  "Tab Visto Bueno Documento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a/span[contains(.,'Visto bueno documento')]"
+  },
+  "Tab Generar Documento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a/span[contains(.,'Generar documento')]"
+  },
+  "Tab Concepto Visita": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a/span[contains(.,'Concepto visita')]"
+  },
+  "Tab Complementar Documento": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a/span[contains(.,'Complementar documento')]"
+  },
+  "Codigo del Pago": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[contains(@placeholder, 'digite su')]"
+  },
+  "Fecha Expedicion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-calendar[@formcontrolname='expeditionDate']/span/input"
+  },
+  "Cantidad Documentos Asociados": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-panel[contains(.,'Documentos Asociados')]//tbody/tr"
+  },
+  "Cantidad Documentos Generados": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-panel[contains(.,'Documentos Generados')]//tbody//tr"
+  },
+  "Seleccionar Tramite Asociado Expediente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-radiobutton[@name='expedientAssociated']"
+  },
+  "Seleccionar Tramite Nuevo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-radiobutton[@name='newExpedientAssociated']"
+  },
+  "Seleccionar Estado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@formcontrolname='state']//span"
+  },
+  "Ingresar Numero de Expediente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-panel//input[@type='text']"
+  },
+  "Boton Cambiar Titular": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-header[contains(.,'titular')]/../..//span[contains(@class, 'ui-icon-compare')]"
+  },
+  "Boton Cambiar Rol Fabricante": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//td[contains(.,'Fabricante')]/..//span[contains(@class, 'ui-icon-compare')]"
+  },
+  "Check Creacion Cambio Titular": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-header[contains(.,'titular')]/../..//td[contains(.,'Creaci')]/..//div[@role='checkbox']"
+  },
+  "Check Eliminacion Cambio Titular": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-header[contains(.,'titular')]/../..//td[contains(.,'Elimina')]/..//div[@role='checkbox']"
+  },
+  "Check Creacion Cambio Representante": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-header[contains(.,'legal')]/../..//td[contains(.,'Creaci')]/..//div[@role='checkbox'])[last()]"
+  },
+  "Check Eliminacion Cambio Representante": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//p-header[contains(.,'legal')]/../..//td[contains(.,'Elimina')]/..//div[@role='checkbox'])[last()]"
+  },
+  "Check Creacion Cambio de Roles": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-header[contains(.,'r')][contains(.,'les')]/../..//td[contains(.,'Creaci')]/..//div[@role='checkbox']"
+  },
+  "Check Eliminacion Cambio de Roles": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-header[contains(.,'r')][contains(.,'les')]/../..//td[contains(.,'Elimina')]/..//div[@role='checkbox']"
+  },
+  "Check Aprobar Cambio de Categoria Toxicologica": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-checkbox[contains(@id, 'idCategoria')]//div[contains(@role,'check')]"
+  },
+  "Check Aprobar Cambio de Informacion de Material de Envase": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//td[contains(.,'Modif')]/..//div[contains(@role, 'check')]"
+  },
+  "Panel Informacion del Producto":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-panel[contains(.,'del producto')]"
+  },
+  "Panel Informacion de Roles":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-panel[contains(.,'roles')]"
+  },
+  "Boton Consultar Radicado":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//app-view-my-procedure//button[contains(.,'Consultar')]"
+  },
+  "Acciones Sobre el Tramite":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Acciones sobre el')]/../..//p-dropdown"
+  },
+  "Observaciones":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Observaciones')]/../..//textarea"
+  },
+  "Tarifa Seleccionada":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[@role='radio'][@aria-checked='true']/../../../../td[5]"
+  },
+  "Pago Internacional":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[(@name='internationalPayment')][(@value='true')]"
+  },
+  "Entidad Recaudadora":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Entidad')]/..//input"
+  },
+  "Numero de Cuenta":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'mero de cuenta')]/..//input"
+  },
+  "Numero de Transaccion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'mero de transacci')]/..//input"
+  },
+  "Fecha de Consignacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-calendar//input"
+  },
+  "Fecha Actual":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//a[contains (@class, 'ui-state-highlight')]"
+  },
+  "Valor":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Valor')]/../..//input"
+  },
+  "Boton Guardar Pago Giro Internacional":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button/span[normalize-space(text())='Guardar'])[1]"
+  },
+  "Confirmacion Pago Giro Internacional":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//legend[contains(.,'Confirmaci')]/..//tbody//tr"
+  },
+  "Boton Codigo de Barras Deshabilitado":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(@class, 'ui-button-secondary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-empty')][contains(.,'barras')]"
+  },
+  "Boton Pse Deshabilitado":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(@class, 'ui-button-secondary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-empty')][contains(.,'Transferencia')]"
+  },
+  "Boton Entrar Nuevo":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Entrar')]//div"
+  }
+}

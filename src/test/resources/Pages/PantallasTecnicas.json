@@ -1,0 +1,400 @@
+{
+
+  "Spinner": {
+  "GetFieldBy": "Xpath",
+  "ValueToFind": "/html/body/app-root/app-main/div[1]/img"
+  },
+  "Nombre del Producto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='nombreProducto']|//input[@name='nombreProducto']|//div//label[contains(.,'Nombre del producto')]/../..//textarea|//textarea[@id='prodName']|//label[contains(.,'Nombre')]/..//input"
+  },
+  "Nombre del Fabricante": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div//label[contains(.,'Nombre del fabricante')]/../..//textarea"
+  },
+  "Marca": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='marca']|//textarea[@name='marca']|//div//label[contains(.,'Marca')]/../..//textarea"
+  },
+  "Alcance de la Certificacion": {
+    "GetFieldBy": "id",
+    "ValueToFind": "nombProd"
+  },
+  "Radio Primer Resultado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[@role='radio'])[1]"
+  },
+  "Usos": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div//label[contains(.,'Usos')]/../..//textarea"
+  },
+  "Metodos de Aplicacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div//label[contains(.,'de aplicaci')]/../..//textarea"
+  },
+  "Mercado al que va Dirigido": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div//label[contains(.,'Mercado')]/../..//textarea"
+  },
+  "Direccion del Fabricante": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div//label[contains(.,'Direcci')]/../..//textarea"
+  },
+  "Variedad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//textarea[@name='variedad']"
+  },
+  "Nombre de la Publicidad": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//textarea[@name='referenciaPublicitaria']"
+  },
+  "Objeto del Estudio": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//textarea[@name='researchObject']"
+  },
+  "Metodologia": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//textarea[@name='methodology']"
+  },
+  "Lugar Donde se va a Realizar el Estudio": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//textarea[@name='researchPlace']"
+  },
+  "Radio Expediente":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Expediente')]/../p-radiobutton|//label[contains(.,'Expediente')]/../input"
+  },
+  "Ingresar Numero de Expediente":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='number']|//input[@placeholder='digite su expediente/resgitro']"
+  },
+  "Ingresar Tiempo al Aire":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@id='Radio']"
+  },
+  "Origen de la Fabricacion del Producto": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Origen de la fabrica')]/../..//p-dropdown//span"
+  },
+  "Area de Aplicacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div/label[contains(.,'rea de aplicaci')]/../..//p-multiselect//span)[1]"
+  },
+  "Descripcion del Area de Aplicacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='descAreaAplicacion']"
+  },
+  "Tipo de Plaguicida": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo de plaguicida')]/../..//p-dropdown//span"
+  },
+  "Plagas Objetivo": {
+    "GetFieldBy": "id",
+    "ValueToFind": "plagasObjetivo"
+  },
+  "Forma de Presentacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@id='idFormaPresentacion']//span|//div/label[contains(.,'Forma de present')]/../..//p-dropdown//span|//textarea[@name='formaPresentacion']|//textarea[@name='presentationForm']"
+  },
+  "Forma Cosmetica": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Forma Cosm')]/../..//p-dropdown//span"
+  },
+  "Forma Cosmetica Deshabilitado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@id='formaCosmetica']//*[contains(@class,'disable')]"
+  },
+  "Grupo Cosmetico": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//textarea[@name='grupoCosmetico']"
+  },
+  "Denominacion Generica": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='denominacionGenerica'][@type='text']"
+  },
+  "Modo Adecuado de Empleo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//textarea[@formcontrolname='modoAdecuadoEmpleo']"
+  },
+  "Categoria Toxicologica": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Categor')]/../..//p-dropdown//span"
+  },
+  "Concepto Toxicologico": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='conceptoToxicologico']"
+  },
+  "Vida Util": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='vidaUtil']|//div[contains(.,'Vida')]/../div/input"
+  },
+  "Antidotos": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//textarea[@formcontrolname='antidoto']"
+  },
+  "Boton Adicionar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Adicionar')])[last()]"
+  },
+  "Boton Adicionar Ingrediente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Adicionar')])[1]"
+  },
+  "Boton Aceptar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Aceptar')]"
+  },
+  "Boton Adicionar Material": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Adicionar')])[2]"
+  },
+  "Boton Agregar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Agregar')])[last()]"
+  },
+  "Boton Agregar Ingredientes": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Agregar')])[2]"
+  },
+  "Boton Buscar y Adicionar":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-button//span[contains(.,'Buscar y Adicionar')]/.."
+  },
+  "Boton Consultar":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button/span[normalize-space(text())='Consultar']"
+  },
+  "Boton Adjuntar Archivo":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Radio')]/../../..//button"
+  },
+  "Boton Buscar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@type='file']"
+  },
+  "Boton Si": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button//*[normalize-space(text())='Si']"
+  },
+  "Boton Cerrar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Cerrar')]"
+  },
+  "Cantidad de Folios": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-inputnumber//input"
+  },
+  "Tipo de Envase": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"tipoEnvase\"]"
+  },
+  "Presentacion Comercial": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"presentacionComercial\"]"
+  },
+  "Material de Envase Primario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"materialEnvasePrimario\"]"
+  },
+  "Material de Envase Secundario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname=\"materialEnvaseSecundario\"]"
+  },
+  "Si Realizar Cargue Manual": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-radiobutton[contains(.,'Si')]"
+  },
+
+  "No Realizar Cargue Manual": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-radiobutton[contains(.,'No')]"
+  },
+
+  "Identificador Unico": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Identificador')]/div/input"
+  },
+  "Nombre Generico del Ingrediente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Nombre gen')]/div/input"
+  },
+  "Nombre del Ingrediente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Nombre del ingrediente')]/div/input"
+  },
+  "Nombre Quimico del Ingrediente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Nombre qu')]/div/input"
+  },
+  "Concentracion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Concentrac')]/div/input"
+  },
+  "Contenido": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='content']"
+  },
+  "Numero de Unidades a Autorizar": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='unitsAuthorizNumber']"
+  },
+  "Numero de Lote": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='loteNumber']"
+  },
+  "Funcion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Func')]/div/input"
+  },
+  "Tipo de Ingrediente": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Tipo de ingrediente')]/div/input"
+  },
+  "Pais Origen del Activo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'origen del activo')]/div/input"
+  },  "Alerta": {
+  "GetFieldBy": "Xpath",
+  "ValueToFind": "//p-toastitem//div"
+},
+  "Seleccionar Codigo Ira Impreso": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'ira impreso')]/../..//p-dropdown//span"
+  },
+  "Seleccionar Codigo Ira Impreso Deshabilitado": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'ira impreso')]/../..//p-dropdown//*[contains(@class,'disable')]"
+  },
+  "CheckBox Tipo de Presentacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-checkbox[@formcontrolname='tipoPresentacion']"
+  },
+  "CheckBox Seleccionar Todo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-checkbox[@label='Seleccionar todo']/div"
+  },
+  "Seleccione Pais":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@id='codigoPaisNso']//span|//div[contains(.,'exporta')]//p-dropdown//span|//div[contains(.,'Pa')]/div/p-dropdown//span"
+  },
+  "Seleccione Pais Deshabilitado":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-dropdown[@id='codigoPaisNso']//*[contains(@class,'disable')]"
+  },
+  "Seleccione Departamento":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Departamento')]/../..//p-dropdown//span"
+  },
+  "Seleccione Ciudad":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Ciudad')]/../..//p-dropdown//span"
+  },
+  "Seleccione Unidad de Medida":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Unidad de medida')]/../..//p-dropdown//span"
+  },
+  "Seleccione Lugar Actividad":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Lugar donde se')]/../..//p-dropdown//span"
+  },
+  "Seleccione Rol":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Rol')]/../..//p-dropdown//span"
+  },
+  "Radio Manual":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-radiobutton[@label='Manual']"
+  },
+  "Fecha Inicio del Estudio":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='dateInit']"
+  },
+  "Fecha Fin del Estudio":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='dateFinish']"
+  },
+  "Seleccionar Producto Sobre el que se Hace el Cambio":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-fieldset[contains(.,'Producto')]//p-dropdown"
+  },
+  "Descripcion de la Modificacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Descripci')]//textarea"
+  },
+  "Boton Continuar":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Continuar')]"
+  },
+  "Boton Actualizar":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Actualizar')]"
+  },
+  "Boton Editar Material de Envase y Presentacion Comercial":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//fieldset[contains(.,'Material de envase')]//span[contains(@class,'ui-icon-edit')]"
+  },
+  "Panel Informacion del Producto":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-panel[contains(.,'del producto')]"
+  },
+  "Panel Informacion de Roles":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//p-panel[contains(.,'roles')]"
+  },
+  "Observaciones":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Observaciones')]//textarea"
+  },
+  "Boton Previsualizar Certificado":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Previsualizar')]"
+  },
+  "Tipo de Autorizacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Tipo de auto')]/..//p-dropdown"
+  },
+  "Cantidad":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@name='quantity']"
+  },
+  "Fecha Vencimiento":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Fecha vencimiento')]/..//p-calendar"
+  },
+  "Descripcion de la Ubicacion de la Etiqueta Complementaria Stiker":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Descripci')][contains(.,'complementar')]/..//textarea"
+  },
+  "Justificacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//label[contains(.,'Justificaci')]/..//textarea"
+  },
+  "Primer Registro Tabla":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//table/tbody/tr"
+  },
+  "Boton Agregar Modificacion":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//button[contains(.,'Agregar')])[1]"
+  },
+  "Codigo de Identificacion de la NSO":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//*[@id='ui-panel-17-content']/div/div/div[2]/div[2]/input"
+  },
+  "Nombre del Producto Deshabilitado":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='nombreProducto']|input[@disabled]"
+  },
+  "Marca Deshabilitado":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='marca']|input[@disabled]"
+  },
+  "Tipo de Plaguicida Deshabilitado":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/label[contains(.,'Tipo de plaguicida')]/../..//p-dropdown//span"
+  },
+  "Vigencia del Codigo de Identificacion de la NSO":{
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div//input[@type='date']"
+  }
+}

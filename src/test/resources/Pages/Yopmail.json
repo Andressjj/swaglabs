@@ -1,0 +1,54 @@
+{
+  "Correo Generado": {
+    "GetFieldBy": "id",
+    "ValueToFind": "egen"
+  },
+  "Ingresar a un Correo": {
+    "GetFieldBy": "id",
+    "ValueToFind": "login"
+  },
+  "Iframe Inbox": {
+    "GetFieldBy": "id",
+    "ValueToFind": "ifinbox"
+  },
+  "Iframe Contenido": {
+    "GetFieldBy": "id",
+    "ValueToFind": "ifmail"
+  },
+  "Correo Link Registro": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Confirmacion de crea')]/button"
+  },
+  "Correo Codigo Verificacion": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'digo de verificaci')]/button"
+  },
+  "Correo Confirmacion Registro": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'Registro Exitoso')]/button"
+  },
+  "Correo Registro Empresa": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div[contains(.,'inscripci')][contains(.,'empresa')]/button"
+  },
+  "Boton Refrescar": {
+    "GetFieldBy": "id",
+    "ValueToFind": "refresh"
+  },
+  "Boton Opciones": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "(//div[@class='wminboxheader']/div/button/i)[1]"
+  },
+  "Opcion Vaciar Buzon": {
+    "GetFieldBy": "id",
+    "ValueToFind": "delall"
+  },
+  "Contenido Correo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/br/.."
+  },
+  "Boton Nuevo": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[contains(.,'Nuevo')]"
+  }
+}
