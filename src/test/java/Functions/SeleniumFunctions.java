@@ -188,7 +188,7 @@ public class SeleniumFunctions {
     }
 
     public void RetriveTestData(String parameter) throws Exception {
-     // DEPRECATED, se crea uno nuevo que hace un foreach por el properties.
+        // DEPRECATED, se crea uno nuevo que hace un foreach por el properties.
         Environment = CreateDriver.defaultAmbiente();
         try {
             SaveInScenarioVar(parameter, readProperties(parameter + "." + Environment));
@@ -717,96 +717,68 @@ public class SeleniumFunctions {
     public void iClicInElement(String element) throws Exception {
         By SeleniumElement = SeleniumFunctions.getCompleteElement(element);
 
-        try {
-            driver.findElement(SeleniumElement).click();
-            log.info("Click on element by " + element + " of " + ValueToFind);
-        } catch (NoSuchElementException | StaleElementReferenceException | ElementClickInterceptedException e) {
-            log.info("Element " + element + " is not clickeable in this moment, trying second once...");
-            int secs = 5000;
-            Thread.sleep(secs);
-
+        for (int retry = 0; retry < 3; retry++) {
             try {
                 driver.findElement(SeleniumElement).click();
                 log.info("Click on element by " + element + " of " + ValueToFind);
-            } catch (ElementNotInteractableException r) {
-                log.info("Element " + element + " is not clickeable in this moment, trying third once...");
-                int seconds = 15000;
-                Thread.sleep(seconds);
+                retry = 3;
+            } catch (Exception e) {
+                log.info("Element " + element + " is not clickeable in this moment, trying "+(retry+2)+" once...");
+                Thread.sleep(5000*(retry+2));
 
-                driver.findElement(SeleniumElement).click();
-                log.info("Click on element by " + element);
+                if(retry==2){
+                    driver.findElement(SeleniumElement).click();
+                }
             }
-
-        } catch (ElementNotInteractableException e) {
-            log.info("Element " + element + " of " + ValueToFind + "  is not clickeable in this moment, trying second once...");
-            int secs = 5000;
-            Thread.sleep(secs);
-
-            try {
-                driver.findElement(SeleniumElement).click();
-                log.info("Click on element by " + element + " of " + ValueToFind);
-            } catch (ElementNotInteractableException r) {
-                log.info("Element " + element + " of " + ValueToFind + " is not clickeable in this moment, trying third once...");
-                int seconds = 15000;
-                Thread.sleep(seconds);
-
-                driver.findElement(SeleniumElement).click();
-                log.info("Click on element by " + element + " of " + ValueToFind);
-            }
-
-
         }
+
     }
 
 
-    public void iSelectContains(String text) throws Exception {
+    public void iSelectContainsText(String element, String text) throws Exception {
 
-        By SeleniumElement = By.xpath("//li/span[contains(.,'" + text + "')]");  // INVIMA
-      /*
-      ESTE CODIGO SE MODIFICA DEPENDIENTO DEL PROYECTO, PARA SELECCIONAR ALGO DE UNA LISTA
-        By SeleniumElement = By.xpath("//div/ul/li/span[contains(.,'"+text+"')]");  // Personeria.
-        */
+        By SeleniumElement = SeleniumFunctions.getCompleteElement(element);
+        System.out.println(SeleniumElement.toString());
+        String ValuetoFinder = SeleniumElement.toString();
+        int check = ValuetoFinder.indexOf("[contains(.,'')]");
+        String elementEdited = "";
+        elementEdited = ValuetoFinder.replace("By.xpath: ","");
+        if (check > -1) {
+            elementEdited = elementEdited.replace("contains(.,'')","contains(.,'"+text+"')");
 
-        try {
-            driver.findElement(SeleniumElement).click();
-            log.info("Selecting element by " + text + " of " + ValueToFind);
-        } catch (NoSuchElementException | StaleElementReferenceException | ElementClickInterceptedException e) {
-            log.info("Element " + text + " is not clickeable in this moment, trying second once...");
-            int secs = 5000;
-            Thread.sleep(secs);
-
-            try {
-                driver.findElement(SeleniumElement).click();
-                log.info("Selecting on element by " + text);
-            } catch (ElementNotInteractableException r) {
-                log.info("Element " + text + " of " + ValueToFind + " is not clickeable in this moment, trying third once...");
-                int seconds = 15000;
-                Thread.sleep(seconds);
-
-                driver.findElement(SeleniumElement).click();
-                log.info("Selecting on element by " + text + " of " + ValueToFind);
-            }
-
-        } catch (ElementNotInteractableException e) {
-            log.info("Element " + text + " of " + ValueToFind + " is not Selected in this moment, trying second once...");
-            int secs = 5000;
-            Thread.sleep(secs);
-
-            try {
-                driver.findElement(SeleniumElement).click();
-                log.info("Selecting on element by " + text + " of " + ValueToFind);
-            } catch (ElementNotInteractableException r) {
-                log.info("Element " + text + " is not Selected in this moment, trying third once...");
-                int seconds = 15000;
-                Thread.sleep(seconds);
-
-                driver.findElement(SeleniumElement).click();
-                log.info("Selecting on element by " + text + " of " + ValueToFind);
-            }
-
-
+            System.out.println("El elemento tenia contains se reemplaza: "+elementEdited);
+        } else{
+            elementEdited = elementEdited+"[contains(.,'"+text+"')]";
+            System.out.println("El elemento no tenia el contains sea agrego: "+elementEdited);
         }
+
+        iClicInElement(elementEdited);
     }
+
+
+    public void iSelectContainsKey(String element, String key) throws Exception {
+
+        By SeleniumElement = SeleniumFunctions.getCompleteElement(element);
+
+        String text = ScenaryData.get(key);
+
+        System.out.println(SeleniumElement.toString());
+        String ValuetoFinder = SeleniumElement.toString();
+        int check = ValuetoFinder.indexOf("[contains(.,'')]");
+        String elementEdited = "";
+        elementEdited = ValuetoFinder.replace("By.xpath: ","");
+        if (check > -1) {
+            elementEdited = elementEdited.replace("contains(.,'')","contains(.,'"+text+"')");
+
+            System.out.println("El elemento tenia contains se reemplaza: "+elementEdited);
+        } else{
+            elementEdited = elementEdited+"[contains(.,'"+text+"')]";
+            System.out.println("El elemento no tenia el contains sea agrego al final: "+elementEdited);
+        }
+
+        iClicInElement(elementEdited);
+    }
+
 
     public void scrollPage(String to) throws Exception {
 
@@ -832,13 +804,13 @@ public class SeleniumFunctions {
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
 
-            log.info("Scrolling to the end of the page");
-            jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-            Object size = jse.executeScript("return document.body.scrollHeight");
-            jse.executeScript("scroll(0, -250);");
+        log.info("Scrolling to the end of the page");
+        jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        Object size = jse.executeScript("return document.body.scrollHeight");
+        jse.executeScript("scroll(0, -250);");
 
-            int veces = (Integer.parseInt(String.valueOf(size))/500);
-            int pixeles = 0;
+        int veces = (Integer.parseInt(String.valueOf(size))/500);
+        int pixeles = 0;
         for(int i = 0; i < veces; i++){
             jse.executeScript("scroll(0, "+pixeles+");");
             Thread.sleep(500);
@@ -976,9 +948,9 @@ public class SeleniumFunctions {
     }
 
     public void WindowsHandle(String WindowsName) throws Exception {
-          // I do clic in the element that open the new windows.
+        // I do clic in the element that open the new windows.
         attachScreenShot();
- //  I check if the var exits to remove it.
+        //  I check if the var exits to remove it.
         if (this.HandleMyWindows.containsKey(WindowsName)) {
             HandleMyWindows.remove("Hotmail");
             log.info(String.format("Already exist the windows %s, cleaning var", WindowsName));
@@ -991,12 +963,12 @@ public class SeleniumFunctions {
             log.info("The New window " + WindowsName + " is saved in scenario with value " + this.HandleMyWindows.get(WindowsName));
         }
         String winHandle = this.HandleMyWindows.get(WindowsName);
-       //  I try three times
+        //  I try three times
         for (int retry = 0; retry < 4; retry++) {
-             // If session id is equal to id of principal tab, wait three times.
+            // If session id is equal to id of principal tab, wait three times.
             if(principal.equals(winHandle)){
-                    iWaitTime(5);
-                    log.info("No found the new windows, waiting for try again.");
+                iWaitTime(5);
+                log.info("No found the new windows, waiting for try again.");
             } else {
                 // if session id is different to principal tab, save the session id and switch.
                 retry = 4;
@@ -1134,6 +1106,43 @@ public class SeleniumFunctions {
     }
 
 
+    public void saveInScenarioRandomText(String key) throws IOException {
+
+        long numer = System.currentTimeMillis();
+
+        String fileName = ("Prueba-" + numer);
+
+        if (!this.ScenaryData.containsKey(key)) {
+
+            this.ScenaryData.put(key, fileName);
+
+            log.info(String.format("Se creo una variable %s con el texto: %s ", key, fileName));
+        } else {
+
+            this.ScenaryData.replace(key, fileName);
+            log.info(String.format("Se actualizo una variable una variable %s con el texto: %s ", key, fileName));
+
+        }
+
+    }
+
+    public void copyKeytoKey (String key, String newKey)  {
+
+        boolean exist = this.ScenaryData.containsKey(key);
+
+        if (exist) {
+            System.out.println("entro al if");
+            String text = this.ScenaryData.get(key);
+
+            if (!this.ScenaryData.containsKey(newKey)) {
+                this.ScenaryData.put(newKey, text);
+            } else {
+                this.ScenaryData.replace(newKey, text);
+            }
+            log.info(String.format("Se copio el valor %s de la variable %s a la variable %s ",text, key,newKey));
+        }
+    }
+
     public void SaveInScenarioFile(String key, String format) throws IOException {
 
         String directoryName = new SeleniumFunctions().getCurrentDirectory();
@@ -1213,7 +1222,7 @@ public class SeleniumFunctions {
         attachScreenShot();
         Assert.assertTrue("Element is not enable: " + element, isEnable);
     }
-public void checkIfElementIsDisable(String element) throws Exception {
+    public void checkIfElementIsDisable(String element) throws Exception {
 
 
         boolean isEnable = isElementEnable(element);

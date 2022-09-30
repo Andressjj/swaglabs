@@ -1,0 +1,11 @@
+{
+  "Usuario": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='username']"
+  },
+
+  "Password": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//input[@formcontrolname='password']"
+  }
+}
