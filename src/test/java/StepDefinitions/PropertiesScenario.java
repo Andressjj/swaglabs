@@ -3,6 +3,8 @@ package StepDefinitions;
 import Functions.SeleniumFunctions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.And;
+import io.cucumber.java.es.Cuando;
+import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 
 
@@ -29,5 +31,22 @@ public class PropertiesScenario {
     public void elSistemaGeneraUnaAlertaQueContieneElTexto(String texto) throws Exception {
         functions.scrollPage("top");
         functions.checkPartialTextElementPresent("Alerta", texto);
+    }
+
+    @Dado("inicio sesion en el aplicativo con cedula {string}")
+    public void inicioSesionEnElAplicativoConCedula(String cedula) {
+    functions.switchToNewTab("https://www.google.com/", "primera");
+    }
+
+    @Dado("inicio sesion en el aplicativo cedula {string}")
+    public void inicioSesionEnElAplicativoCedula(String arg0) {
+    }
+
+    @Cuando("ingreso las credenciales correcta")
+    public void ingresoLasCredencialesCorrecta() {
+    }
+
+    @Entonces("puedo ver el dashboard del aplicativo")
+    public void puedoVerElDashboardDelAplicativo() {
     }
 }

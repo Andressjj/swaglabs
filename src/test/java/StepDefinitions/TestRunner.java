@@ -12,10 +12,9 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber-reports",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 
-        tags = "@ReconocimientoCodigoNSOCosmeticos"
+        tags = "@InicioSesionCredencialesCorrectas"
 
 )
 
 public class TestRunner {
-
 }
