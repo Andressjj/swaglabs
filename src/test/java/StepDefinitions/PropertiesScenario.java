@@ -7,6 +7,7 @@ import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 
+import java.io.IOException;
 
 public class PropertiesScenario {
 
@@ -33,20 +34,16 @@ public class PropertiesScenario {
         functions.checkPartialTextElementPresent("Alerta", texto);
     }
 
-    @Dado("inicio sesion en el aplicativo con cedula {string}")
-    public void inicioSesionEnElAplicativoConCedula(String cedula) {
-    functions.switchToNewTab("https://www.google.com/", "primera");
+    @Dado("inicio sesion en el aplicativo")
+    public void inicioSesionEnElAplicativo() throws IOException {
+        functions.switchToNewTab("https://www.saucedemo.com/", "Navegaoor" );
+        functions.attachScreenShot();
     }
 
-    @Dado("inicio sesion en el aplicativo cedula {string}")
-    public void inicioSesionEnElAplicativoCedula(String arg0) {
-    }
-
-    @Cuando("ingreso las credenciales correcta")
-    public void ingresoLasCredencialesCorrecta() {
-    }
-
-    @Entonces("puedo ver el dashboard del aplicativo")
-    public void puedoVerElDashboardDelAplicativo() {
+    @Cuando("ingreso las credenciales correcta usuario {string}")
+    public void ingresoLasCredencialesCorrectaUsuario(String usuaio) throws Exception {
+        functions.iSetElementWithText("id", "standard_user" );
+     //   functions.iLoadTheDOMInformation("Principal.json");
+        functions.attachScreenShot();
     }
 }
