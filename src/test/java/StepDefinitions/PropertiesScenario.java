@@ -45,5 +45,6 @@ public class PropertiesScenario {
         functions.iSetElementWithText("id", "standard_user" );
      //   functions.iLoadTheDOMInformation("Principal.json");
         functions.attachScreenShot();
+        functions.attachText("pruebna");
     }
 }
