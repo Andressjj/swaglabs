@@ -9,8 +9,28 @@
     "ValueToFind": "//input[@formcontrolname='password']"
   },
 
-  "User": {
+  "user": {
     "GetFieldBy": "id",
     "ValueToFind": "user-name"
+  },
+
+  "pass": {
+    "GetFieldBy": "id",
+    "ValueToFind": "password"
+  },
+
+  "login": {
+    "GetFieldBy": "id",
+    "ValueToFind": "login-button"
+  },
+
+  "Product": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//button[@id='add-to-cart-sauce-labs-backpack']"
+  },
+
+  "Carrito": {
+    "GetFieldBy": "Xpath",
+    "ValueToFind": "//div/a[@class='shopping_cart_link']"
   }
 }

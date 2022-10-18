@@ -1,15 +1,15 @@
 # language: es
 
-Característica: Inicio de sesión
+ Característica: Inicio de sesión
   Como un usuario de la entidad cuando ingrese credenciales entonces ingreso al aplicativo.
 
   Antecedentes:
-    Dados los datos del ambiente y usuarios del sistema
+   Dados los datos del ambiente y usuarios del sistema
 
-    @InicioSessionCredentialsCorrectas
-  Escenario: Iniciar sesion con credenciales correctas
-    Dado inicio sesion en el aplicativo
-    Cuando ingreso las credenciales correcta usuario "standard_user"
+    #@InicioSessionCredentialsCorrectas
+  #Escenario: Iniciar sesion con credenciales correctas
+    #Dado inicio sesion en el aplicativo
+    #Cuando ingreso las credenciales correcta usuario "standard_user"
     #Entonces puedo ver el dashboard del aplicativo
 
 

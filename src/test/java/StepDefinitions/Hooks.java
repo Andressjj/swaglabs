@@ -149,7 +149,7 @@ public class Hooks {
         }
         SeleniumFunctions.ScenaryObtained.clear();
 
-      driver.quit(); // Cierra el navegador
+      //driver.quit(); // Cierra el navegador
 
     }
 

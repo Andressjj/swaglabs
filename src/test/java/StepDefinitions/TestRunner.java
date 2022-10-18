@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber-reports",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 
-        tags = "@InicioSessionCredentialsCorrectas"
+        tags = "@AllScenarios"
 
 )
 
