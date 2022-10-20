@@ -97,12 +97,68 @@ public class PropertiesScenario {
         functions.iLoadTheDOMInformation("Principal.json");
         functions.iClicInElement("Carrito");
         functions.attachScreenShot();
-
-
     }
 
     @Entonces("Puedo ver el productos seleccionados en el carrito")
     public void puedoVerElProductosSeleccionadosEnElCarrito() throws Exception {
         functions.checkPartialTextElementPresent("//div[@class=\"cart_quantity\"]", "1");
+        functions.attachScreenShot();
+    }
+
+    @Dado("Los productos para realizar el Checkout")
+    public void losProductosParaRealizarElCheckout() {
+    }
+
+    @Cuando("Realizado el Checkout")
+    public void realizadoElCheckout() throws Exception {
+        functions.iLoadTheDOMInformation("Principal.json");
+        functions.iClicInElement("Checkout");
+        functions.attachScreenShot();
+    }
+
+    @Y("ingreso primer nombre {string} y apellido {string}")
+    public void ingresoPrimerNombreYApellido(String nombre, String apellido) throws Exception {
+        functions.iLoadTheDOMInformation("Principal.json");
+        functions.iSetElementWithText("FirstnameCheck", "Andres");
+        functions.iSetElementWithText("LastnameCheck", "Jimenez");
+        functions.attachScreenShot();
+    }
+
+    @Y("como codigo postal {string}")
+    public void comoCodigoPostal(String arg0) throws Exception {
+        functions.iLoadTheDOMInformation("Principal.json");
+        functions.iSetElementWithText("PosCode", "4722000");
+        functions.attachScreenShot();
+    }
+
+    @Entonces("Puedo entonces ver la vision general del Checkout")
+    public void puedoEntoncesVerLaVisionGeneralDelCheckout() throws Exception {
+        functions.iLoadTheDOMInformation("Principal.json");
+        functions.iClicInElement("ContiCheck");
+        functions.attachScreenShot();
+    }
+
+    @Dado("Que puedo ver la descripcion del producto a comprar")
+    public void quePuedoVerLaDescripcionDelProductoAComprar() {
+    }
+
+    @Cuando("Finaliza la compra")
+    public void finalizaLaCompra() {
+    }
+
+    @Entonces("puedo ver la confirmacion de la compra")
+    public void puedoVerLaConfirmacionDeLaCompra() throws Exception {
+        functions.iLoadTheDOMInformation("Principal.json");
+        functions.iClicInElement("FinishCheck");
+        functions.attachScreenShot();
+
+    }
+
+    @Entonces("Retorno al Home page del portal")
+    public void retornoAlHomePageDelPortal() throws Exception {
+        functions.iLoadTheDOMInformation("Principal.json");
+        functions.iClicInElement("BackHome");
+        functions.attachScreenShot();
+
     }
 }
